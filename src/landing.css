@@ -1,0 +1,44 @@
+.Landing{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Assests/Images/landing.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: initial;
+    overflow-x: hidden;
+    display: grid;
+    text-align: center;
+}
+
+.Landing::after{
+    display: block;
+    position: absolute;
+    z-index: 5;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.589) 0%, rgba(0, 0, 0, 0) 50%);
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.Heading{
+    position: absolute;
+    z-index: 7;
+    font-size: 4vh;
+    font-weight: bold;
+    color: #FFF;
+    width: 100vw; 
+    font-family: 'Roboto-Bold';
+}
+
+.Quoat{
+    margin-top: -6vh;
+    font-size: 5vh;
+    font-weight: 100;
+    font-family: 'Old-english';
+}
+
+.content-heading{
+    margin-top: auto;
+    margin-bottom: 70vh;
+}
