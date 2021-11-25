@@ -1,1 +1,1 @@
-"react-icons": "^4.3.1",
+A develop web for Richmond College.
