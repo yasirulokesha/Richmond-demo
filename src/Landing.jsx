@@ -3,7 +3,6 @@ import './landing.css';
 import {gsap} from 'gsap';
 import {makeStyles} from '@material-ui/core';
 import landing from './Assests/Images/landing.webp';
-import { withStyles } from "@material-ui/core/styles";
 
 var tl = gsap.timeline({default:{duration:3}})
 
@@ -18,10 +17,10 @@ const useStyles = makeStyles(theme=>({
     overflowX: 'hidden',
     display: 'grid',
     textAlign: 'center',
-    "&:before":{
+    '&:after':{
       display: 'block',
       position: 'absolute',
-      zIndex: '5',
+      zIndex: 5,
       content: '',
       width: '100vw',
       height: '100vh',
@@ -46,5 +45,6 @@ function Landing() {
     </div>
   );
 }
-export default withStyles(useStyles)(Landing);
-// export default Landing;
+
+
+export default Landing;
