@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ImSearch} from '@react-icons/all-files/im/ImSearch';
 import {IoIosNotifications} from '@react-icons/all-files/io/IoIosNotifications';
-import Data from './Pages/sections.json'
+import Data from './Pages/sections.json';
 
 const open = (status) => {
     document.getElementById('nav').classList.add('active')
@@ -18,6 +18,14 @@ const openInNewTab = (url) => {
 }
 
 function Header(){
+
+    const [indicator, value] = useState(0);
+
+
+    const navigate = ()=>{
+        value(value)
+    } 
+
     return(
         <header>
             <span className='logo'></span>
@@ -33,7 +41,7 @@ function Header(){
                 {Data.map(post => {
                     return(
                         <li key={post.Topic}>
-                            <div>{post.Topic}</div>
+                            <div onClick={navigate}>{post.Topic}</div>
                             <div className='dropdown'>
                                 <div className='dropdown-item' onClick={() => openInNewTab(post.l1)}>{post.ca1}</div>
                                 <div className='dropdown-item' onClick={() => openInNewTab(post.l2)}>{post.ca2}</div>

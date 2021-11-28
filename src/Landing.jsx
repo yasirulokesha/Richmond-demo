@@ -1,12 +1,12 @@
 import React from 'react';
-import './landing.css';
 import {gsap} from 'gsap';
-import {makeStyles} from '@material-ui/core';
+import {makeStyles} from '@mui/styles';
 import landing from './Assests/Images/landing.webp';
 
-var tl = gsap.timeline({default:{duration:3}})
+var tl = gsap.timeline({default:{duration:3}});
+tl.from('.Heading', {opacity:0, y: 20});
 
-const useStyles = makeStyles(theme=>({
+const useStyles = makeStyles({
   Landing:{
     width: '100vw',
     height: '100vh',
@@ -17,29 +17,48 @@ const useStyles = makeStyles(theme=>({
     overflowX: 'hidden',
     display: 'grid',
     textAlign: 'center',
-    '&:after':{
+    "&::after": {
       display: 'block',
       position: 'absolute',
       zIndex: 5,
-      content: '',
+      content: "''",
       width: '100vw',
       height: '100vh',
       background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.589) 0%, rgba(0, 0, 0, 0) 50%)',
       backgroundColor: 'rgba(0, 0, 0, 0.164)'
     }
+  },
+  Heading: {
+    position: 'absolute',
+    zIndex: 7,
+    fontSize: '4vh',
+    fontWeight: 'bold',
+    color: '#FFF',
+    width: '100vw', 
+    fontFamily: 'Roboto-Bold',
+  },
+  contentheading: {
+    marginTop: 'auto',
+    marginBottom: '70vh'
+  },
+  Quoat: {
+    marginTop: '-6vh',
+    fontSize: '5vh',
+    fontWeight: 100,
+    fontFamily: 'Old-english'
   }
-}))
+})
 
-tl.from('.Heading', {opacity:0, y: 20});
+
 
 function Landing() {
   let styles = useStyles();
   return (
     <div className={styles.Landing} >
-      <div className="content-heading">
-        <div className='Heading'>
+      <div className={styles.contentheading}>
+        <div className={styles.Heading}>
           <h1>Welcome to<br></br>Richmond College</h1>
-          <h1 className='Quoat'>Nisi Dominus Frustra</h1>
+          <h1 className={styles.Quoat}>Nisi Dominus Frustra</h1>
         </div>
       </div>
     </div>
