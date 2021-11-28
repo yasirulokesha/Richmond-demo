@@ -4,7 +4,7 @@ import Sections from './sections.jsx';
 import Footer from './footer.jsx';
 import Landing from './Landing.jsx';
 import './index.css';
-import Aboutcontent from './Pages/about.jsx'
+import Aboutcontent from './Pages/About'
 
 import {
     BrowserRouter as Router,
