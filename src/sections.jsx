@@ -1,5 +1,5 @@
 import React from 'react';
-import Data from './Pages/Components/sections.json'
+import Data from './Data/sections.json'
 
 const openInNewTab = (url) => {
     window.open(url, '_self', 'noopener,noreferrer')

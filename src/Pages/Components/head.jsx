@@ -2,7 +2,7 @@ import React from 'react';
 import {ImSearch} from '@react-icons/all-files/im/ImSearch';
 import {IoIosNotifications} from '@react-icons/all-files/io/IoIosNotifications';
 import { Link } from 'react-router-dom';
-import Data from './sections.json';
+import Data from '../../Data/sections.json';
 
 const open = (status) => {
     document.getElementById('nav').classList.add('active')
