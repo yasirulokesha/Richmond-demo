@@ -1,7 +1,7 @@
 import React from 'react';
 import Datacontent from './content.json'
 
-function Content(){
+function Body(){
 
     return (
         <div className='content landing-content'>
@@ -15,4 +15,4 @@ function Content(){
     )
 }
 
-export default Content;
+export default Body;

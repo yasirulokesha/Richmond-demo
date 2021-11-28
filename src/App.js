@@ -1,16 +1,13 @@
-import Header from './header';
-import Content from './Home-content';
-import Sections from './sections.jsx';
-import Footer from './footer.jsx';
-import Landing from './Landing.jsx';
+import React from 'react';
+import Home from './Landing/index.jsx';
 import './index.css';
-import Aboutcontent from './Pages/About'
-
+import Aboutcontent from './Pages/About';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
+// import Cover from './Landing/Components/Cover'
 
 
 function App(){
@@ -19,11 +16,7 @@ function App(){
             <div className='app-content' id='content'>
                 <Switch>
                     <Route exact path="/">
-                        <Header/>
-                        <Landing/>
-                        <Content/>
-                        <Sections/>
-                        <Footer/>
+                        <Home/>
                     </Route>
                     <Route path="/About">
                         <Aboutcontent/>
