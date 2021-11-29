@@ -112,13 +112,13 @@ export default function Aboutcontent() {
                 <History />
               </Route>
               <Route path="/About/Founders">
-                <Comming_soon />
+                <Founders />
               </Route>
               <Route path="/About/Traditions">
-                <Comming_soon />
+                <Traditions />
               </Route>
               <Route path="/About/Past Principals">
-                <Comming_soon />
+                <PastPrincipals />
               </Route>
             </Switch>
           </div>
@@ -194,10 +194,26 @@ function About() {
   );
 }
 
-function Comming_soon() {
+function Founders() {
   return (
     <div>
-      <h2>Comming Soon...</h2>
+      <h2>Founders</h2>
+    </div>
+  );
+}
+
+function Traditions() {
+  return (
+    <div>
+      <h2>Traditions</h2>
+    </div>
+  );
+}
+
+function PastPrincipals() {
+  return (
+    <div>
+      <h2>Past Principals</h2>
     </div>
   );
 }

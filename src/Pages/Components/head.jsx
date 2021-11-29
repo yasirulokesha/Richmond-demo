@@ -3,6 +3,7 @@ import {ImSearch} from '@react-icons/all-files/im/ImSearch';
 import {IoIosNotifications} from '@react-icons/all-files/io/IoIosNotifications';
 import { Link } from 'react-router-dom';
 import Data from '../../Data/sections.json';
+// import {makeStyles} from '@mui/styles'
 
 const open = (status) => {
     document.getElementById('nav').classList.add('active')
@@ -18,7 +19,16 @@ const openInNewTab = (url) => {
     window.open(url, '_self', 'noopener,noreferrer')
 }
 
+// const useStyles = makeStyles({
+//     disable:{
+//         display: 'none'
+//     }
+// })
+
 function Head(){
+
+    // let styles = useStyles();
+
     return(
         <header style={{position: 'relative',  height: '30vh'}}>
             <Link to='/'><span className='logo paged'></span></Link>
@@ -34,8 +44,8 @@ function Head(){
                 {Data.map(post => {
                     return(
                         <li key={post.Topic}>
-                            <div>{post.Topic}</div>
-                            <div className='dropdown'>
+                            <div onClick={() => openInNewTab(post.Bl)}>{post.Topic}</div>
+                            <div className={post['drop-style']}>
                                 <div className='dropdown-item' onClick={() => openInNewTab(post.l1)}>{post.ca1}</div>
                                 <div className='dropdown-item' onClick={() => openInNewTab(post.l2)}>{post.ca2}</div>
                                 <div className='dropdown-item' onClick={() => openInNewTab(post.l3)}>{post.ca3}</div>

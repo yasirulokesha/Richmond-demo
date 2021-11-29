@@ -7,7 +7,6 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-// import Cover from './Landing/Components/Cover'
 
 
 function App(){

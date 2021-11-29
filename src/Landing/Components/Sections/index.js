@@ -1,10 +1,9 @@
 import React from 'react';
-import Data from './Data/sections.json'
+import Data from '../../../Data/sections.json';
 
 const openInNewTab = (url) => {
     window.open(url, '_self', 'noopener,noreferrer')
 }
-
 
 function Sections(){
     return(
@@ -13,7 +12,7 @@ function Sections(){
                 {Data.map(post => {
                     return(
                         <ul key={post.Topic}>
-                            <li className={post.style} onClick={() => openInNewTab(post.l1)}>{post.Topic}</li>
+                            <li className={post.style} onClick={() => openInNewTab(post.Bl)}>{post.Topic}</li>
                             <li className="sec" onClick={() => openInNewTab(post.l1)}>{post.ca1}</li>
                             <li className="sec" onClick={() => openInNewTab(post.l2)}>{post.ca2}</li>
                             <li className="sec" onClick={() => openInNewTab(post.l3)}>{post.ca3}</li>

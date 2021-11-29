@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
+// import React, {useState} from 'react';
 import {ImSearch} from '@react-icons/all-files/im/ImSearch';
 import {IoIosNotifications} from '@react-icons/all-files/io/IoIosNotifications';
 import Data from '../../../Data/sections.json';
@@ -19,12 +20,12 @@ const openInNewTab = (url) => {
 
 function Header(){
 
-    const [indicator, value] = useState(0);
+    // const [indicator, value] = useState(0);
 
 
-    const navigate = ()=>{
-        value(value)
-    } 
+    // const navigate = ()=>{
+    //     value(value)
+    // } 
 
     return(
         <header>
@@ -41,8 +42,8 @@ function Header(){
                 {Data.map(post => {
                     return(
                         <li key={post.Topic}>
-                            <div onClick={navigate}>{post.Topic}</div>
-                            <div className='dropdown'>
+                            <div onClick={() => openInNewTab(post.Bl)}>{post.Topic}</div>
+                            <div className={post['drop-style']}>
                                 <div className='dropdown-item' onClick={() => openInNewTab(post.l1)}>{post.ca1}</div>
                                 <div className='dropdown-item' onClick={() => openInNewTab(post.l2)}>{post.ca2}</div>
                                 <div className='dropdown-item' onClick={() => openInNewTab(post.l3)}>{post.ca3}</div>
