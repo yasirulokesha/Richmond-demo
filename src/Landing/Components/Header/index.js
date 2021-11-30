@@ -3,6 +3,7 @@ import React from 'react';
 import {ImSearch} from '@react-icons/all-files/im/ImSearch';
 import {IoIosNotifications} from '@react-icons/all-files/io/IoIosNotifications';
 import Data from '../../../Data/sections.json';
+import {styling} from '../../../styles'
 
 const open = (status) => {
     document.getElementById('nav').classList.add('active')
@@ -20,6 +21,8 @@ const openInNewTab = (url) => {
 
 function Header(){
 
+    let classes = styling();
+
     // const [indicator, value] = useState(0);
 
 
@@ -29,8 +32,8 @@ function Header(){
 
     return(
         <header>
-            <span className='logo'></span>
-            <ul id='nav'>
+            <span className={classes.logo}></span>
+            <ul id={classes.nav}>
                 <div className="top-nav" onClick={() => close('active')}>
                     <h1 className='nav-t'>Richmond College</h1>
                     <div className='mob-nav-b-close'>
