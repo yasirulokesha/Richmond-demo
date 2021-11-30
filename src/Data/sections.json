@@ -1,7 +1,7 @@
 [
     {
         "Topic": "About",
-        "drop-style": "dropdown",
+        "drop-style": "classes.dropdown",
         "ca1": "Overview",
         "l1": "/About/Overview",
         "ca2": "History",
@@ -15,7 +15,7 @@
     },
     {
         "Topic": "Management",
-        "drop-style": "dropdown",
+        "drop-style": "classes.dropdown",
         "ca1": "Richmond Principal",
         "l1": "https://yasiru.online/",
         "ca2": "Administration",
@@ -25,7 +25,7 @@
     },
     {
         "Topic": "School",
-        "drop-style": "dropdown",
+        "drop-style": "classes.dropdown",
         "ca1": "Colege Anthem / Flag / Crest",
         "l1": "https://yasiru.online/",
         "ca2": "Clubs & Socities",
@@ -37,7 +37,7 @@
     },
     {
         "Topic": "Academic",
-        "drop-style": "dropdown",
+        "drop-style": "classes.dropdown",
         "ca1": "Past Papers",
         "l1": "https://yasiru.online/",
         "ca2": "Assignments",
@@ -59,7 +59,7 @@
     },
     {
         "Topic": "Lover’s Quarel",
-        "drop-style": "dropdown",
+        "drop-style": "classes.dropdown",
         "ca1": "Cureent Team",
         "l1": "https://yasiru.online/",
         "ca2": "2019 Comentry",
@@ -71,7 +71,7 @@
     },
     {
         "Topic": "Contact",
-        "drop-style": "dropdown",
+        "drop-style": "classes.dropdown",
         "ca1": "The Principal",
         "l1": "https://yasiru.online/",
         "ca2": "Office",

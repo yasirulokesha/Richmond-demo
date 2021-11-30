@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Landing/index.jsx';
-// import './index.css';
+import './index.css';
 import Aboutcontent from './Pages/About';
 import {
     BrowserRouter as Router,

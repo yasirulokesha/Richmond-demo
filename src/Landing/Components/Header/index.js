@@ -31,14 +31,14 @@ function Header(){
     // } 
 
     return(
-        <header>
+        <header className={classes.header}>
             <span className={classes.logo}></span>
-            <ul id={classes.nav}>
-                <div className="top-nav" onClick={() => close('active')}>
-                    <h1 className='nav-t'>Richmond College</h1>
-                    <div className='mob-nav-b-close'>
-                        <div className="close-it"></div>
-                        <div className="close-it"></div>
+            <ul id="nav">
+                <div className={classes.topNav} onClick={() => close('active')}>
+                    <h1 className={classes.navT}>Richmond College</h1>
+                    <div className={classes.mobNavBClose}>
+                        <div className={classes.closeIt}></div>
+                        <div className={classes.closeIt}></div>
                     </div>
                 </div>
                 <li onClick={() => openInNewTab('/')}>Home</li>
@@ -46,16 +46,17 @@ function Header(){
                     return(
                         <li key={post.Topic}>
                             <div onClick={() => openInNewTab(post.Bl)}>{post.Topic}</div>
-                            <div className={post['drop-style']}>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l1)}>{post.ca1}</div>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l2)}>{post.ca2}</div>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l3)}>{post.ca3}</div>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l4)}>{post.ca4}</div>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l5)}>{post.ca5}</div>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l6)}>{post.ca6}</div>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l7)}>{post.ca7}</div>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l8)}>{post.ca8}</div>
-                                <div className='dropdown-item' onClick={() => openInNewTab(post.l9)}>{post.ca9}</div>
+                            {/* <div className={post['drop-style']}> */}
+                            <div className={classes.dropdown}>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l1)}>{post.ca1}</div>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l2)}>{post.ca2}</div>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l3)}>{post.ca3}</div>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l4)}>{post.ca4}</div>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l5)}>{post.ca5}</div>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l6)}>{post.ca6}</div>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l7)}>{post.ca7}</div>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l8)}>{post.ca8}</div>
+                                <div className={classes.dropdownItem} onClick={() => openInNewTab(post.l9)}>{post.ca9}</div>
                             </div>
                         </li>
                     )

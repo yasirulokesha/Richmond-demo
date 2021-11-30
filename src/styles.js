@@ -1,58 +1,12 @@
 import {createUseStyles} from 'react-jss';
+import logo from './Landing/Components/Header/collegelogo.png'
 
 // color_blue = '#00C2FF';
 // color_wt = '#FFF';
 
 export const styling = createUseStyles({
-    '@font-face': {
-        fontFamily: 'Roboto-Bold',
-        src: 'url(./Assests/Fonts/Roboto-Bold.ttf)'
-    },
-    '@font-face': {
-        fontFamily: 'Roboto-Light',
-        src: 'url(./Assests/Fonts/Roboto-Light.ttf)',
-    },
-    '@font-face': {
-        fontFamily: 'Roboto-Medium',
-        src: 'url(./Assests/Fonts/Roboto-Medium.ttf)',
-    },
-      
-      '@font-face': {
-        fontFamily: 'Roboto-Regular',
-        src: 'url(./Assests/Fonts/Roboto-Regular.ttf)',
-      },
-      
-      '@font-face': {
-        fontFamily: 'Old-english',
-        src: 'url(Assests/Fonts/old-english.ttf)',
-      },
-      
-      '@font-face': {
-        fontFamily: 'Calistoga',
-        src: 'url(./Assests/Fonts/SecularOne-Regular.ttf)',
-      },
-      
-      '@font-face': {
-        fontFamily: 'LuckiestGuy',
-        src: 'url(./Assests/Fonts/LuckiestGuy-Regular.ttf)',
-      },
-      
-      '@font-face': {
-        fontFamily: 'MonteCarlo-Regular',
-        src: 'url(./Assests/Fonts/MonteCarlo-Regular.ttf)',
-      },
-      
-      body : {
-        margin: 0,
-        overflowX: 'hidden',
-        /* backgroundColor: #E5EBF0, */
-      },
-      
-      html: {
-        scrollBehavior: "smooth",
-      },
-      
-      content: {
+
+    content: {
         maxWidth: '60%',
         marginLeft: 'auto',
         marginRight: 'auto',
@@ -82,14 +36,7 @@ export const styling = createUseStyles({
             position: 'absolute',
             marginTop: '-1vh',
         },
-        '& logo':{
-            content: 'url(./Landing/Components/Header/collegelogo.png)',
-            display: 'block',
-            height: 70,
-            width: 70,
-            marginLeft: '4vw',
-            marginTop: 30,
-        },
+        
         '& ul':{
             marginLeft: 'auto',
             marginRight: 'auto',
@@ -114,6 +61,16 @@ export const styling = createUseStyles({
         },
 
       },
+
+      logo:{
+        background: ['url({logo})', 'no-repeat', 'top'],
+        // content: 'url({logo})',
+        display: 'block',
+        height: 70,
+        width: 70,
+        marginLeft: '4vw',
+        marginTop: 30,
+    },
       
       actions: {
         marginTop: 30,
@@ -337,20 +294,20 @@ export const styling = createUseStyles({
         display: 'none',
     },
       
-    dropdown: {
-        display: 'none',
-        position: 'absolute',
-        width: 'fit-content',
-        marginLeft: -5,
-        marginTop: 5,
-        padding: 10,
-        backgroundColor: '#FFF',
-        color: '#1b1b1b',
-        borderRadius: 8,
-        animation: 'drop-down 300ms',
-        height: 'fit-content',
-        opacity: 100,
-    },
+    // dropdown: {
+    //     display: 'none',
+    //     position: 'absolute',
+    //     width: 'fit-content',
+    //     marginLeft: -5,
+    //     marginTop: 5,
+    //     padding: 10,
+    //     backgroundColor: '#FFF',
+    //     color: '#1b1b1b',
+    //     borderRadius: 8,
+    //     animation: 'drop-down 300ms',
+    //     height: 'fit-content',
+    //     opacity: 100,
+    // },
       
     dropdownItem: {
         display: 'block',
