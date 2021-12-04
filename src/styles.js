@@ -6,6 +6,17 @@ import logo from './Landing/Components/Header/collegelogo.png'
 
 export const styling = createUseStyles({
 
+  '@global':{
+    body: {
+      margin: '0px',
+      overflowX: 'hidden',
+    },
+    
+    html: {
+      scrollBehavior: 'smooth'
+    }
+  },
+
     content: {
         maxWidth: '60%',
         marginLeft: 'auto',
@@ -64,7 +75,7 @@ export const styling = createUseStyles({
 
       logo:{
         background: ['url({logo})', 'no-repeat', 'top'],
-        // content: 'url({logo})',
+        content: 'url({logo})',
         display: 'block',
         height: 70,
         width: 70,
